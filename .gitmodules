@@ -1,0 +1,6 @@
+[submodule "neovim"]
+	path = neovim
+	url = https://github.com/heyitscarl-dev/zen.nvim.git
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/heyitscarl-dev/zen.tmux.git
