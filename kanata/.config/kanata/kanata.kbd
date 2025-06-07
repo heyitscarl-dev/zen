@@ -1,0 +1,48 @@
+(defcfg
+  process-unmapped-keys yes
+  windows-altgr cancel-lctl-press
+)
+
+(defsrc
+  caps  q w e
+        a s d f   h j k l
+        y x c
+
+        spc
+)
+
+(defvar
+  tap 200
+  hold 200
+)
+
+(defalias
+  caps esc
+  a (tap-hold $tap $hold a lmet)
+  s (tap-hold $tap $hold s lalt)
+  d (tap-hold $tap $hold d lctrl)
+  f (tap-hold $tap $hold f lshift)
+
+  h (tap-hold $tap $hold h rshift)
+  j (tap-hold $tap $hold j rctrl)
+  k (tap-hold $tap $hold k ralt)
+  l (tap-hold $tap $hold l rmet)
+
+  spc (tap-hold $tap $hold spc (layer-while-held space-mod))
+)
+
+(deflayer base
+  @caps q w e
+        @a @s @d @f   @h @j @k @l
+        y x c
+
+        @spc
+)
+
+(deflayer space-mod
+  @caps 1 2 3
+        4 5 6 0   left down up right
+        7 8 9
+
+        spc
+)
