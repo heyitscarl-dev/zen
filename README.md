@@ -8,12 +8,8 @@ This repository contains a collection of all my dotfiles, as well as a couple cu
 
 ## structure
 
-Each folder within this repo contains a directory structure mirroring the home directory, which makes it super easy
+(almost) Every folder within this repo contains a directory structure mirroring the home directory, which makes it super easy
 to use [GNU stow](https://www.gnu.org/software/stow/) to apply each configuration individually.
-
-Some folders are "private", or at least not super customizable but rather focused on my individual needs, while I have
-spent a lot of time on others, making sure they're good to use standalone and as a drop-in replacement for what you've
-got right now.
 
 ## installation
 
