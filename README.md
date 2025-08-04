@@ -33,7 +33,7 @@ fish apply.fish
 ```
 
 > [!WARNING]
-> If you already have existing configurations for certain tools, you'll need to back them up first:
+> If you already have existing configurations for certain tools, you should back them up first:
 > ```bash
 > mv ~/.config/yourtool ~/.config/yourtool.bak
 > ```
